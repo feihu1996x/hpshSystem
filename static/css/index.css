@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* 头部,底部 */
+header,footer{
+    position: relative;
+    height: 80px;
+    background-color: #373d47;
+    font-size: 16px;
+}
+header>div, footer>div{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 800px;
+    height: 100%;
+    /*background-color: red;*/
+}
+footer{
+    height: 60px;
+    color: white;
+}
+header>div>input{
+    height: 20px;
+}
+header>div>input:last-child{
+    cursor: pointer;
+    color: white;
+    background-color: #373d47;
+    border: none;
+}
+
+/* 主体 */
+section{
+    position: relative;
+}
+section>div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center; 
+    width: 800px;
+    position: positive;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+section>div>div{    
+    margin-top: 10px;
+}
+.chart{
+    width: 600px;
+    height: 400px;
+    margin-bottom: 10px;
+}
+

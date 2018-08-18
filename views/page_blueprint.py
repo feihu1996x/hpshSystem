@@ -8,13 +8,12 @@
 @version: 1.0
 """
 
-from flask import Blueprint, jsonify, g
+from flask import Blueprint, jsonify, g, render_template
 
 
 page = Blueprint('page', __name__, url_prefix="/page")
 
 @page.route("/index")
 def index():
-    print(g.request_args)
-    return jsonify({"status": "ok"})
+    return render_template('index.html')
 

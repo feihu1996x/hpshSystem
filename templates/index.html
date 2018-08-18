@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}xxx公司游戏大数据统计可视化系统{% endblock %}
+
+{% block content %}
+    <section>
+        <div>
+            <!--日期筛选-->
+            <div>
+                <input id="start_date" type="text" placeholder="请选择起始日期"  readonly="readonly" /> 
+                -
+                <input id="end_date" type="text" placeholder="请选择结束日期"  readonly="readonly" />  
+            </div>
+           
+            <!--图表展示-->
+            <div>
+                <div id="chart0" class="chart"></div>
+                <div id="chart1" class="chart"></div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block customJs %}
+    <script type="text/javascript" src="/static/js/util.js"></script>
+    <script type="text/javascript" src="/static/js/index.js"></script>
+{% endblock  %}

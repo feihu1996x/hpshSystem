@@ -1,5 +1,7 @@
 #!/bin/bash
 
-export local_python=/mnt/usb/public/venv/hpshsystem/bin/python
-export local_pip=/mnt/usb/public/venv/hpshsystem/bin/pip
+local_python=/mnt/usb/public/venv/hpshsystem/bin/python
+local_pip=/mnt/usb/public/venv/hpshsystem/bin/pip
+
+$local_python bootstrap.py
 

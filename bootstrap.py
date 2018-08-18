@@ -8,7 +8,7 @@
 @version: 1.0
 """
 
-from flask import Flask, g, request
+from flask import Flask, g, request, render_template
 
 from views.page_blueprint import page
 
@@ -18,6 +18,10 @@ app = Flask(__name__)
 app.config.from_pyfile("config.py")
 
 BLUEPRINT= [page]
+
+@app.route("/", methods=["GET"])
+def index():
+    return render_template('index.html')
 
 def bootstrap(app=None):
     for view in BLUEPRINT:  # 注册蓝图
