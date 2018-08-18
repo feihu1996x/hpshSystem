@@ -54,7 +54,6 @@ function init_jedate(chartList) {
     }); 
 }
 
-
 function flush_chart(start_date, end_date, elem, dims) {
     /*
         刷新图表
@@ -107,4 +106,43 @@ function set_chart_data(elem, data){
 
     var chart = echarts.getInstanceByDom(document.getElementById(elem));
     chart.setOption(option);
+}
+
+
+function login(){
+    /*
+        用户登录与注销
+    */
+    $("#login").click(function(){
+        var elem = $(this);
+        
+        if(elem.val() === "登录"){  // 发送登录请求
+            var url = "/user/login",
+                params = {
+                    "fwork_id": $("#username").val(),
+                    "fpassword": $("#password").val()
+                };
+
+            $.post(url, params, function(json_data){
+                if (0 === json_data.code) {
+                    // 用户名、密码验证通过
+                    elem.val("注销");
+                    alert(json_data.msg);
+                } else {
+                    alert(json_data.msg);
+                }
+            });
+        } else {  // 发送注销请求
+            var url = "/user/logout";
+            
+            $.post(url, {}, function(json_data){
+                if (0 === json_data.code) {
+                    elem.val("登录");
+                    alert(json_data.msg);
+                } else {
+                    alert(json_data.msg);
+                }       
+            });
+        }
+    });
 }

@@ -10,14 +10,14 @@
 
 from flask import Flask, g, request, render_template
 
-from views.page_blueprint import page
+from views.users import user
 
 
 app = Flask(__name__)
 
 app.config.from_pyfile("config.py")
 
-BLUEPRINT= [page]
+BLUEPRINT= [user]
 
 @app.route("/", methods=["GET"])
 def index():
