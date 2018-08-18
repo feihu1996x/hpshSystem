@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export local_python=/mnt/usb/public/venv/hpshsystem/bin/python
+export local_pip=/mnt/usb/public/venv/hpshsystem/bin/pip
+
