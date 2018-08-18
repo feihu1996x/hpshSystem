@@ -3,5 +3,9 @@
 local_python=/mnt/usb/public/venv/hpshsystem/bin/python
 local_pip=/mnt/usb/public/venv/hpshsystem/bin/pip
 
-$local_python bootstrap.py
+filename=bootstrap.py
+filename=temp.py
+
+
+$local_python $filename 
 
