@@ -13,7 +13,9 @@ class Status:
     响应状态码    
     """
     SUCCESS = 0
-    ERROR = 1
+    ERROR = -1
+    INPUT_EMPTY = -2
+    NO_LOGIN = -3
 
 
 class Response(Status):
@@ -27,7 +29,9 @@ class Response(Status):
         """
         msg_dict = {
             cls.SUCCESS: "请求成功",
-            cls.ERROR: "请求失败"
+            cls.ERROR: "请求失败",
+            cls.INPUT_EMPTY: "输入为空",
+            cls.NO_LOGIN: "当前未登录"
         }
         if not msg:
             msg = msg_dict.get(code, "未定义信息")

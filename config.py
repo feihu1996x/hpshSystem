@@ -39,3 +39,7 @@ MAIL_TOLIST=["gsx0312@qq.com"]
 MAIL_USERNAME="qinxueonline@sina.com"
 MAIL_PASSWORD="admin123"
 
+# session 配置
+SESSION_COOKIE_NAME = 'session_id'
+SECRET_KEY = 'a1GBZ9_x7)l7@8IuMt*'
+

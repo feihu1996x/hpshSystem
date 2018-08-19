@@ -8,7 +8,7 @@
 @version: 1.0
 """
 
-from connection import db_mongodb, db_redis, db_mysql
+from models.connection import db_mongodb, db_redis, db_mysql
 import config
 
 

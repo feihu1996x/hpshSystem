@@ -2,6 +2,10 @@
     <div>
         <input type="text" required="required" id="username" />
         <input type="password" required="required" id="password" />
-        <input type="button" value="登录" id="login" />
+        {% if isLogin %}
+            <input type="button" value="注销" id="login" />
+        {% else %}
+            <input type="button" value="登录" id="login" />
+        {% endif %}
     </div>
 </header>
