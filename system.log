@@ -1,0 +1,7 @@
+2018-08-19 18:45:21,168 INFO sql - INSERT INTO user_info SET fname = '章三', fwork_id=1001, fdept_id=1, flevel_id=1, fpassword='password' [temp.py:35]
+2018-08-19 18:47:14,027 INFO sql - SELECT * FROM user_info [temp.py:59]
+2018-08-19 18:47:14,029 INFO sql data -- [{'fname': '章三', 'fwork_id': 1001, 'fdept_id': 1, 'flevel_id': 1, 'fpassword': 'password', 'fadd_time': None, 'fupdate_time': None}] [temp.py:65]
+2018-08-19 18:47:14,029 INFO sql data -- [{'fname': '章三', 'fwork_id': 1001, 'fdept_id': 1, 'flevel_id': 1, 'fpassword': 'password', 'fadd_time': None, 'fupdate_time': None}] [temp.py:65]
+2018-08-19 18:48:08,400 INFO sql - SELECT * FROM user_info [temp.py:59]
+2018-08-19 18:48:08,402 INFO sql data -- [{'fname': '章三', 'fwork_id': 1001, 'fdept_id': 1, 'flevel_id': 1, 'fpassword': 'password', 'fadd_time': None, 'fupdate_time': None}] [temp.py:65]
+2018-08-19 18:48:08,402 INFO sql data -- [{'fname': '章三', 'fwork_id': 1001, 'fdept_id': 1, 'flevel_id': 1, 'fpassword': 'password', 'fadd_time': None, 'fupdate_time': None}] [temp.py:65]

@@ -10,23 +10,15 @@
 
 from flask import Blueprint, jsonify, render_template
 
+from utils.response import Response
+
 user = Blueprint('user', __name__, url_prefix="/user")
 
 @user.route("/login", methods=["POST"])
 def login():
-    data = {
-        "code": 0,
-        "msg": "登录成功",
-        "data": []
-    }
-    return jsonify(data);
+    return jsonify(Response.responseJson(Response.SUCCESS, data=[]));
 
 @user.route("/logout", methods=["POST"])
 def logout():
-    data = {
-        "code": 0,
-        "msg": "注销成功",
-        "data": []
-    }
-    return jsonify(data);
+    return jsonify(Response.responseJson(Response.SUCCESS, data=[]));
 

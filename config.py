@@ -13,8 +13,8 @@ import os
 # mysql连接配置
 MYSQL_HOST="192.168.0.100"
 MYSQL_PORT="3306"
-MYSQL_USER="root"
-MYSQL_PASSWORD="9f%IFhJ618"
+MYSQL_USER="test"
+MYSQL_PASSWORD="*3!0CcEf"
 MYSQL_DATABASE="hpshSystem"
 
 # 开发服务器配置
