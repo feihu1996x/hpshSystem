@@ -122,8 +122,11 @@ class DataController(BaseController):
         auth_level = self.auth.get_auth_level(dims_name=dims_name)
         auth_level_id = auth_level.get("flevel_id", 100000)
 
+        print("flevel_id:"+str(flevel_id))
+        print("auth_level_id:"+str(auth_level_id))
+
         # 比较是否有权限
-        if flevel_id < auth_level_id:
+        if int(flevel_id) < int(auth_level_id):
             return False
 
         return True

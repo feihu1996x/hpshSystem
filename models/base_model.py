@@ -25,5 +25,9 @@ class BaseModel:
                                         database=config.MYSQL_DATABASE)
     
     def __init__(self):
+        # redis key过期时间
         self.redis_key_expire_time = 60*60*24
+        
+        # redis key 前缀
+        self.redis_key_prefix = "hpshSystem_"
         
