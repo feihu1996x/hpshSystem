@@ -2,12 +2,8 @@
     var chartList=[
         {
             "elemId" : "chart0",  
-            "dims" : "chart0"
+            "dims" : "game_activity"
         }, 
-        {
-            "elemId" : "chart1",  
-            "dims" : "chart1"
-        }
     ];
 
     // 初始化echarts实例

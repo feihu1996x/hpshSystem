@@ -16,6 +16,7 @@ class Status:
     ERROR = -1
     INPUT_EMPTY = -2
     NO_LOGIN = -3
+    NO_AUTH = -4
 
 
 class Response(Status):
@@ -31,7 +32,8 @@ class Response(Status):
             cls.SUCCESS: "请求成功",
             cls.ERROR: "请求失败",
             cls.INPUT_EMPTY: "输入为空",
-            cls.NO_LOGIN: "当前未登录"
+            cls.NO_LOGIN: "当前未登录",
+            cls.NO_AUTH: "没有权限"
         }
         if not msg:
             msg = msg_dict.get(code, "未定义信息")

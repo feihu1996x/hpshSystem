@@ -58,7 +58,7 @@ function flush_chart(start_date, end_date, elem, dims) {
     /*
         刷新图表
     */
-    var url = "",
+    var url = "/data/get_data",
         params = {
             "start_date": start_date,
             "end_date": end_date,
@@ -72,6 +72,8 @@ function flush_chart(start_date, end_date, elem, dims) {
         // 并用其填充echarts图表
         if (json_data.code === 0) {
            set_chart_data(elem, json_data.data);
+        } else {
+            alert(json_data.msg);
         }
     });
 }
@@ -80,13 +82,13 @@ function set_chart_data(elem, data){
     /*
         填充图表数据
     */
-    var title = data["data"],
+    var title = data["title"],
         xAxis = data["xAxis"],
         series = data["series"],
         names = [];
 
     series.forEach(function(item, index, arr){
-        names.push(value["name"]);
+        names.push(item["name"]);
     });
 
     var option = {

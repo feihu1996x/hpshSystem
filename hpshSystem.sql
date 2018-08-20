@@ -22,3 +22,11 @@ CREATE TABLE IF NOT EXISTS `level_info` (
   `fupdate_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT 'update time'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COMMENT='level info';
 
+CREATE TABLE IF NOT EXISTS `game_activity` (
+    `fdate` varchar(64) NOT NULL COMMENT '日期',
+    `fuser_id` INT NOT NULL COMMENT '用户id',
+    `fgame_id` INT NOT NULL COMMENT '游戏id',
+    `fadd_time` timestamp DEFAULT NULL COMMENT 'add time',
+    `fupdate_time` timestamp NULL DEFAULT NULL ON UPDATE CURRENT_TIMESTAMP COMMENT 'update time'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='所有游戏活跃度';
+

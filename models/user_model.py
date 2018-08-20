@@ -32,5 +32,9 @@ class UserModel(BaseModel):
         """
         获取用户信息
         """
-        pass
+        sql = "SELECT fname, fwork_id, fdept_id, flevel_id FROM user_info WHERE fwork_id={fwork_id}".format(fwork_id=fwork_id)
+        data = self.mysql_db.execute_query_one_dict(sql)
+
+        return data
+
 

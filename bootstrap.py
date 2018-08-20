@@ -11,6 +11,7 @@
 from flask import Flask, g, request, render_template, session
 
 from views.users import user
+from views.datas import data
 from utils.logger import Logger
 
 
@@ -18,7 +19,7 @@ app = Flask(__name__)
 
 app.config.from_pyfile("config.py")
 
-BLUEPRINT= [user]
+BLUEPRINT= [user, data]
 
 
 @app.context_processor
