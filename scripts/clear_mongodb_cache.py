@@ -51,7 +51,7 @@ if __name__ == "__main__":
             date = (datetime.now() + timedelta(days=i)).strftime("%Y-%m-%d")
             for j in range(100):
                 document = {
-                    "sql": "SELECT fdate, COUNT(fgame_id) AS game_activity FROM game_activity WHERE fdate>='{start_date}' AND fdate <='{end_date}' GROUP BY fdate;".format(start_date=date, end_date=date),
+                    "sql": "SELECT fdate, COUNT(fgame_id, {j}) AS game_activity FROM game_activity WHERE fdate>='{start_date}' AND fdate <='{end_date}' GROUP BY fdate;".format(start_date=date, end_date=date, j=j),
                     "flush_date": date,
                     "data": [j],
                     "flush_count": j
