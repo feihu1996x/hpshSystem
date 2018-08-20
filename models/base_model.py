@@ -16,8 +16,11 @@ class BaseModel:
     """
         数据库连接模型基类
     """
-    redis_db = db_redis.redis_connection(host=config.REDIS_HOST, port=config.REDIS_PORT)
-    mongo_db = db_mongodb.mongodb_connection(host=config.MONGODB_HOST, port=config.MONGODB_PORT)
+    redis_db = db_redis.redis_connection(host=config.REDIS_HOST, 
+                                         port=config.REDIS_PORT)
+    mongo_db = db_mongodb.mongodb_connection(host=config.MONGODB_HOST, 
+                                             port=config.MONGODB_PORT,
+                                             database=config.MONGODB_DB)
     mysql_db = db_mysql.MySQLConnection(host=config.MYSQL_HOST,
                                         port=config.MYSQL_PORT,
                                         user=config.MYSQL_USER,

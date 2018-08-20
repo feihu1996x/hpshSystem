@@ -11,15 +11,17 @@
 from pymongo import MongoClient
 
 
-def mongodb_connection(host="127.0.0.1", port=27017):
+def mongodb_connection(host="127.0.0.1", port=27017, database=None):
     """
         MongoDB数据库连接
     """
     conn = MongoClient(host=host, port=port)
-    return conn
+    db = eval("conn."+database)
+    return db
 
 
 if __name__ == "__main__":
-    db = mongodb_connection(host="192.168.0.100")
-    print(db.testcollection.name)
+    db = mongodb_connection(host="192.168.0.100", database="hpshSystem")
+    print(db.test.insert_one({"a":1}))
+    print(db.test.find_one())
 

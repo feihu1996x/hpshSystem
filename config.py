@@ -24,6 +24,7 @@ REDIS_PORT=6379
 # mongodb连接配置
 MONGODB_HOST="192.168.0.100"
 MONGODB_PORT=27017
+MONGODB_DB="hpshSystem"
 
 # 开发服务器配置
 WEB_HOST="0.0.0.0"
