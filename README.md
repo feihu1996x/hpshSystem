@@ -1,8 +1,10 @@
 ## hpshSystem
 
-> xxx公司游戏大数据可视化系统
+> Hive+Python+Sqoop+HDFS大数据统计与可视化系统
+
+## Build and Setup
 
 ```bash
-# launch the dev server
-./begin
+# install package
+pip3 install -r requirements.txt
 ```

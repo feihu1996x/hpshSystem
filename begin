@@ -3,7 +3,12 @@
 local_python=/mnt/usb/public/venv/hpshsystem/bin/python
 local_pip=/mnt/usb/public/venv/hpshsystem/bin/pip
 
-filename=bootstrap.py
-filename=temp.py
-$local_python $filename 
+# filename=bootstrap.py
+# filename=temp.py
+# $local_python $filename 
 
+# package=pyhive
+# $local_pip install $package
+
+rm requirements.txt
+$local_pip freeze >> requirements.txt
