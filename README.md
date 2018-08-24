@@ -43,7 +43,7 @@ docker(应用容器)
 ```bash
 
 # 安装依赖
-pip isntall -r requirements.txt
+pip install -r requirements.txt
 
 # 导入数据库
 mysql -uroot -p hpshSystem < hpshSystem.sql
