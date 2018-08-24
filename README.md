@@ -30,8 +30,6 @@ Hive(海量数据处理与统计)
 
 Sqoop(HDFS分布式文件系统与关系数据库之间数据互导)
 
-Supervisor(进程管理)
-
 Crontab(定时调度)
 
 Nginx(反向代理)
