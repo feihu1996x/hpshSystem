@@ -113,4 +113,12 @@ elif "sqoop" == sys.argv[1]:
 
     GameActivity()()
     GameUserAge()() 
-     
+elif "nocache" == sys.argv[1]:
+    print("清除MongoDB缓存...") 
+    
+    from scripts.clear_mongodb_cache import ClearMongoDBCache
+    
+    collection_list = ["game_activity"]
+    db = ClearMongoDBCache(collection_list)
+    db.clear_cache()
+  
