@@ -42,7 +42,8 @@ docker(应用容器)
 
 ```bash
 
-# 安装依赖
+# 安装依赖库
+yum install gcc-c++ python-devel.x86_64 cyrus-sasl-devel.x86_64
 pip install -r requirements.txt
 
 # 导入数据库
