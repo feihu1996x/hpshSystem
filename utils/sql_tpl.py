@@ -10,7 +10,7 @@
 
 SQL_TPL = {
     "game_activity": """
-                SELECT fdate, COUNT(fgame_id) AS game_activity FROM game_activity WHERE fdate>='{start_date}' AND fdate <='{end_date}' GROUP BY fdate;
+                SELECT fdate, SUM(fcount) AS game_activity FROM game_activity WHERE fdate>='{start_date}' AND fdate <='{end_date}' GROUP BY fdate;
               """
 }
 

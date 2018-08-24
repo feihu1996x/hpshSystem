@@ -57,6 +57,8 @@ class DataModel(BaseModel):
         else: # mongo缓存中没有数据
             Logger.info_logger().info("从mysql中查找数据")
             results = self.mysql_db.execute_query_list(sql)  # 表数据量很大时，查询会变得很慢
+            for result in results:
+                result[dims] = int(result[dims])
             document = {  # 构造文档
                 "sql": sql,
                 "data": results,

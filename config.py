@@ -29,7 +29,9 @@ MONGODB_DB="hpshSystem"
 # hive连接配置
 HIVE_HOST="192.168.0.101"
 HIVE_PORT=10000
+HIVE_SSH_PORT=22
 HIVE_USER="hadoop"
+HIVE_SSH_PASSWORD="hadoop"
 
 # 开发服务器配置
 WEB_HOST="0.0.0.0"

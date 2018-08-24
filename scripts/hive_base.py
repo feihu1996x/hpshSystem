@@ -2,7 +2,7 @@
 
 """
 @file: hive_base.py
-@brief: Hive统计基类
+@brief: Hive数据统计基类
 @author: feihu1996.cn
 @date: 18-08-22
 @version: 1.0
