@@ -36,6 +36,8 @@ Crontab(定时调度)
 
 Nginx(反向代理)
 
+docker(应用容器)
+
 ## Build and Setup
 
 ```bash
