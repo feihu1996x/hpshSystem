@@ -58,7 +58,7 @@ function flush_chart(start_date, end_date, elem, dims) {
     /*
         刷新图表
     */
-    var url = "/data/get_data",
+    var url = GET_DATA_URL,
         params = {
             "start_date": start_date,
             "end_date": end_date,
@@ -119,7 +119,7 @@ function login(){
         var elem = $(this);
         
         if(elem.val() === "登录"){  // 发送登录请求
-            var url = "/user/login",
+            var url = USER_LOGIN_URL,
                 params = {
                     "fwork_id": $("#username").val(),
                     "fpassword": $("#password").val()
@@ -135,7 +135,7 @@ function login(){
                 }
             });
         } else {  // 发送注销请求
-            var url = "/user/logout";
+            var url = USER_LOGOUT_URL;
             
             $.post(url, {}, function(json_data){
                 if (0 === json_data.code) {

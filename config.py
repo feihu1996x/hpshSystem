@@ -51,3 +51,10 @@ MAIL_PASSWORD="admin123"
 SESSION_COOKIE_NAME = 'session_id'
 SECRET_KEY = 'a1GBZ9_x7)l7@8IuMt*'
 
+# url前缀
+URL_PREFIX=""
+
+# 静态资源
+STATIC_FOLDER="static"
+STATIC_URL="/static"
+

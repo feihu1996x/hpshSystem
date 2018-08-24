@@ -13,8 +13,9 @@ from flask import Blueprint, jsonify, render_template, g, session
 
 from controllers.user_controller import UserController
 from utils.auth import Auth
+import config
 
-user = Blueprint('user', __name__, url_prefix="/user")
+user = Blueprint('user', __name__, url_prefix=config.URL_PREFIX+"/user")
 
 
 @user.route("/login", methods=["POST"])

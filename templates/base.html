@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<title>{% block title %}默认标题{% endblock %}</title>
-        <link rel="stylesheet" type="text/css" href="/static/css/index.css"/>
-        <link rel="stylesheet" type="text/css" href="/static/plugins/jedate.css"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}"/>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='plugins/jedate.css') }}"/>
         <script type="text/javascript">
             var isLogin = {{ isLogin | tojson }};
             console.log(isLogin);
@@ -18,9 +18,9 @@
         
         {% include 'footer.html'  %}
 
-        <script type="text/javascript" src="/static/plugins/echarts.js"></script>
-        <script type="text/javascript" src="/static/plugins/jquery.js"></script>
-        <script type="text/javascript" src="/static/plugins/jquery.jedate.js"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='plugins/echarts.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='plugins/jquery.js') }}"></script>
+        <script type="text/javascript" src="{{ url_for('static', filename='plugins/jquery.jedate.js') }}"></script>
 
         {% block customJs %}
         {% endblock %}

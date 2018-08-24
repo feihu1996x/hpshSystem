@@ -14,9 +14,10 @@ from flask import Blueprint, jsonify, g, session
 from utils.auth import Auth
 from utils.response import Response
 from controllers.data_controller import DataController
+import config
 
 
-data = Blueprint('data', __name__, url_prefix="/data")
+data = Blueprint('data', __name__, url_prefix=config.URL_PREFIX+"/data")
 
 @data.route("/get_data", methods=["GET"])
 @Auth.login_require

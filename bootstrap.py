@@ -13,9 +13,10 @@ from flask import Flask, g, request, render_template, session
 from views.users import user
 from views.datas import data
 from utils.logger import Logger
+import config
 
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder=config.STATIC_FOLDER, static_url_path=config.STATIC_URL)
 
 app.config.from_pyfile("config.py")
 
@@ -28,7 +29,7 @@ def common():
         "isLogin": True if session.get("fwork_id", None) else False
     }
 
-@app.route("/", methods=["GET"])
+@app.route(app.config["URL_PREFIX"]+"/", methods=["GET"])
 def index():
     return render_template('index.html')
 

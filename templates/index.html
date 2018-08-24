@@ -22,6 +22,7 @@
 {% endblock %}
 
 {% block customJs %}
-    <script type="text/javascript" src="/static/js/util.js"></script>
-    <script type="text/javascript" src="/static/js/index.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/config.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/util.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/index.js') }}"></script>
 {% endblock  %}
