@@ -34,7 +34,9 @@ Crontab(定时调度)
 
 Nginx(反向代理)
 
-docker(应用容器)
+Docker(应用容器)
+
+Gunicorn(wsgi)
 
 Supervisor(进程管理)
 
