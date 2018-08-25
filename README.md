@@ -36,6 +36,8 @@ Nginx(反向代理)
 
 docker(应用容器)
 
+Supervisor(进程管理)
+
 ## Build and Setup
 
 ```bash
