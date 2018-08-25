@@ -44,7 +44,7 @@ Supervisor(进程管理)
 
 # 安装依赖库
 yum install gcc-c++ python-devel.x86_64 cyrus-sasl-devel.x86_64
-pip install -r requirements.txt
+pip3 install -r requirements.txt
 
 # 导入数据库
 mysql -uroot -p hpshSystem < hpshSystem.sql
