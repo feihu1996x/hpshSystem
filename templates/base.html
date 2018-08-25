@@ -5,6 +5,7 @@
 		<title>{% block title %}默认标题{% endblock %}</title>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/index.css') }}"/>
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='plugins/jedate.css') }}"/>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='imgs/favicon.ico') }}" type="image/x-icon" />
         <script type="text/javascript">
             var isLogin = {{ isLogin | tojson }};
             console.log(isLogin);
