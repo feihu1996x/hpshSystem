@@ -23,7 +23,7 @@ class ClearMongoDBCache(BaseModel):
         self.collection_list = collection_list
 
     def clear_cache(self):
-        for collection in collection_list:
+        for collection in self.collection_list:
             count = eval("self.mongo_db." + collection + ".count()")  # 当前缓存的总数
             overflow_count = count - self.max_count  # 当前缓存超出的总数 
 
