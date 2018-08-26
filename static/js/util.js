@@ -3,7 +3,7 @@ function init_chart(chartList){
         初始化echarts实例
     */
     chartList.forEach(function(item, index, arr){
-       echarts.init(document.getElementById(item["elemId"]));         
+       echarts.init(document.getElementById(item["elemId"]), 'light');         
     });
 }
 
