@@ -1,5 +1,6 @@
 // 通用接口前缀
 URL_PREFIX="";
+// URL_PREFIX="/hpshSystem";
 
 // 获取图表数据接口
 GET_DATA_URL=URL_PREFIX+"/data/get_data";

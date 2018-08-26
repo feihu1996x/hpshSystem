@@ -11,18 +11,18 @@
 import os
 
 # mysql连接配置
-MYSQL_HOST="192.168.0.100"
+MYSQL_HOST="172.17.109.195"
 MYSQL_PORT=3306
 MYSQL_USER="test"
 MYSQL_PASSWORD="*3!0CcEf"
 MYSQL_DATABASE="hpshSystem"
 
 # redis连接配置
-REDIS_HOST="192.168.0.100"
+REDIS_HOST="172.17.109.195"
 REDIS_PORT=6379
 
 # mongodb连接配置
-MONGODB_HOST="192.168.0.100"
+MONGODB_HOST="172.17.109.195"
 MONGODB_PORT=27017
 MONGODB_DB="hpshSystem"
 
@@ -53,8 +53,10 @@ SECRET_KEY = 'a1GBZ9_x7)l7@8IuMt*'
 
 # url前缀
 URL_PREFIX=""
+# URL_PREFIX="/hpshSystem"
 
 # 静态资源
 STATIC_FOLDER="static"
-STATIC_URL="/static"
+STATIC_URL=URL_PREFIX + "/static"
+
 
