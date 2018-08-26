@@ -66,6 +66,9 @@ python3 begin.py hive
 # 使用Sqoop将数据导出到MySQL
 python3 begin.py sqoop
 
+# 清除MongoDB缓存
+python3 begin.py nocache
+
 ```
 
 ## Website
