@@ -7,37 +7,21 @@
 ## 技术栈
 
 HTML
-
 CSS 
-
 JavaScript
-
 Echarts(数据可视化)
-
 Flask(Web后端)
-
 Python
-
 MySQL
-
 MongoDB(请求数据缓存, 体积较大的数据)
-
 Redis(请求数据缓存)
-
 Hadoop
-
 Hive(海量数据处理与统计)
-
 Sqoop(HDFS分布式文件系统与关系数据库之间数据互导)
-
 Crontab(定时调度)
-
 Nginx(反向代理)
-
 Docker(应用容器)
-
-Gunicorn(wsgi)
-
+Gunicorn(WSGI)
 Supervisor(进程管理)
 
 ## Build and Setup
