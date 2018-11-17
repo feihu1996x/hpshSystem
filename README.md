@@ -10,7 +10,8 @@
 - MySQL
 - MongoDB
 - Redis
-- Hadoop/HDFS/MapReduce/Hive/Sqoop
+- Hadoop/HDFS/MapReduce
+- Hive/Sqoop
 - Crontab
 - Nginx/Docker
 - Gunicorn
