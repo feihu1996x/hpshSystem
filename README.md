@@ -1,33 +1,26 @@
 # hpshSystem
 
-## 项目描述
+> 大数据统计与可视化系统
 
-大数据统计与可视化系统
+## Tech Stack
 
-## 技术栈
-
-HTML
-CSS 
-JavaScript
-Echarts(数据可视化)
-Flask(Web后端)
-Python
-MySQL
-MongoDB(请求数据缓存, 体积较大的数据)
-Redis(请求数据缓存)
-Hadoop
-Hive(海量数据处理与统计)
-Sqoop(HDFS分布式文件系统与关系数据库之间数据互导)
-Crontab(定时调度)
-Nginx(反向代理)
-Docker(应用容器)
-Gunicorn(WSGI)
-Supervisor(进程管理)
+- HTML/CSS/JavaScript
+- Echarts
+- Flask
+- Python
+- MySQL
+- MongoDB
+- Redis
+- Hadoop/HDFS/Hive/Sqoop
+- Crontab
+- Nginx
+- Docker
+- Gunicorn
+- Supervisor
 
 ## Build and Setup
 
 ```bash
-
 # 安装依赖库
 yum install gcc-c++ \
 python-devel.x86_64 \
@@ -56,10 +49,8 @@ python3 begin.py sqoop
 
 # 清除MongoDB缓存
 python3 begin.py nocache
-
 ```
 
-## Website
+## Demo Link
 
 [http://dev.feihu1996.cn/hpshsystem/](http://dev.feihu1996.cn/hpshsystem/ "hpshSystem")
-
