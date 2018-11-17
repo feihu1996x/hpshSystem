@@ -6,15 +6,13 @@
 
 - HTML/CSS/JavaScript
 - Echarts
-- Flask
-- Python
+- Python/Flask
 - MySQL
 - MongoDB
 - Redis
 - Hadoop/HDFS/Hive/Sqoop
 - Crontab
-- Nginx
-- Docker
+- Nginx/Docker
 - Gunicorn
 - Supervisor
 
