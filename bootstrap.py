@@ -42,8 +42,8 @@ def bootstrap(app=None):
     def before():
         # 获取所有请求参数(get和post)
         # 保存到全局变量g中
-        args_get = {k: v[0] for k, v in dict(request.args).items()}
-        args_post = {k: v[0] for k, v in dict(request.form).items()}
+        args_get = {k: v for k, v in dict(request.args).items()}
+        args_post = {k: v for k, v in dict(request.form).items()}
         args_get.update(args_post)
         g.request_args = args_get
 
