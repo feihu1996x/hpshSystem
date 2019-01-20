@@ -35,7 +35,7 @@ HIVE_SSH_PASSWORD="hadoop"
 
 # 开发服务器配置
 WEB_HOST="0.0.0.0"
-WEB_PORT="8080"
+WEB_PORT="8081"
 
 # 日志配置
 LOGGER_PATH=os.getcwd()+"/system.log"
